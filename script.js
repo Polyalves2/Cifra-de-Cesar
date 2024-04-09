@@ -29,7 +29,7 @@ function cifraDeCesar(texto, chave) {
   function descriptografar() {
     let textoCifrado = document.getElementById("textoCifrado").value;
     let chave = parseInt(document.getElementById("chave").value);
-    let textoOriginal = cifraDeCesar(textoCifrado, -chave);
+    let textoOriginal = cifraDeCesar(textoCifrado, +chave);
     document.getElementById("textoOriginal").value = textoOriginal;
   }
   
